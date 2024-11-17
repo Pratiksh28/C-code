@@ -1,0 +1,36 @@
+// function #include<stdio.h>
+
+struct Point
+{
+int x, y;
+};
+
+int main()
+{
+// Create an array of structures
+struct Point arr[10];
+
+// Access array members
+/*arr[0].x = 10;
+arr[0].y = 20;
+arr[1].x = 50;
+// arr[1].y = 60;*/
+int i,n;
+printf("\n\nHow many values of x and y you want store?");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+	printf("\n arr[%d]. x=",i);	
+	scanf("%d",&arr[i]. x);
+	printf("\n arr[%d]. y=",i);	
+	scanf("%d",&arr[i]. y);
+}
+for(i=0;i<n;i++)
+{
+	printf("\n\n\t arr[%d].x= %d   arr[%d].y= %d",i ,arr[i].x,i, arr[i].y);
+}
+
+//printf("\n\n\t arr[0].x= %d   arr[0].y= %d", arr[0].x, arr[0].y);
+//printf("\n\n\t arr[1].x= %d   arr[1].y= %d", arr[1].x, arr[1].y);
+return 0;
+}
